@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Local Weather Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./assets/styles/styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <h1>Local Weather Dashboard</h1>
+        </header>
+
+        <main>
+            <section id="search">
+                <!-- SECTION FOR CITY SEARCH -->
+                <form id="searchForm">
+                    <input id="city-search" type="text" placeholder="For what city would you like the 5-day forecast?" required>
+                    <button type="submit">Search</button>
+                </form>
+                <!-- SECTION FOR SEARCH HISTORY -->
+                <h2>Search History</h2>
+                <div id="searchHistory"></div>
+            </section>
+            
+            <!-- SECTION FOR CURRENT WEATHER -->
+            <section id="currentWeather">
+                <h2>Selected City</h2>
+                <h3>Current Date | Current Time</h3>
+            </section>
+
+            <!-- SECTION FOR CURRENT DAY FORECAST -->
+            <section id="currentForecast">
+                <h2>Today's Forecast</h2>
+            </section>
+
+            <!-- SECTION FOR FUTURE FORECAST -->
+            <section id="futureForecast">
+                <h2>Looking Forward</h2>
+            </section>
+        </main>
+        
+        <script src="./assets/js/script.js" async defer></script>
+    </body>
+</html>
