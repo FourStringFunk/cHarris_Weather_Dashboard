@@ -17,23 +17,25 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header>
-            <h1>Local Weather Dashboard</h1>
+        <header class="d-flex justify-content-center h-50 py-3 bg-primary bg-gradient text-light">
+            <h1 class="">Local Weather Dashboard</h1>
         </header>
 
-        <main>
-            <section id="search">
+        <main class="d-flex min-vh-100 mt-5">
+            <section class="mx-3" id="search">
                 <!-- SECTION FOR CITY SEARCH -->
-                <form id="searchForm">
-                    <input id="cityName" type="text" placeholder="For what city would you like the 5-day forecast?" required>
-                    <button type="submit">Search</button>
+                <form class="d-flex flex-column" id="searchForm">
+                    <input class="flex-fill mb-3 p-2" id="cityName" type="text" placeholder="Search for a city" required>
+                    <button class="btn btn-success" type="submit">Search</button>
                 </form>
                 <!-- SECTION FOR SEARCH HISTORY -->
-                <h2>Search History</h2>
-                <div id="searchHistory"></div>
+                <div class="mt-5">
+                    <h2>Search History</h2>
+                    <div id="searchHistory"></div>
+                </div>
             </section>
             
-            <section id="weather">
+            <section class="flex-grow-1 mx-3" id="weather">
                 <!-- SECTION FOR CURRENT WEATHER -->
                 <div id="currentWeather">
                     <h2>Selected City</h2>
