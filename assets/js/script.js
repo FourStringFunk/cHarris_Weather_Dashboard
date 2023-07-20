@@ -1,11 +1,20 @@
 // Store API KEY for use in fetch request
-const apiKey = '61f3651f9a5ee983973c3a5ec6762bd2';
+const apiKey = '823b5b204b16a2ab1d588a4cc07ddcc0';
+const request = "https://api.openweathermap.org/data/2.5/forecast?=${city}&appid=${apiKey}";
 
 // Fetch request for current weather conditions, parsed to current weather section.
 // Fetch request for future weather conditions, parsed to future weather section.
 function weatherDataRequest() {
-    
+    fetch(request)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        console.log(data);
+    })
 }
+
+weatherDataRequest();
 
 // WHEN I view current weather conditions for that city, THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the the wind speed
 // NEEDED
